@@ -1,0 +1,140 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Apr 23 02:40:09 2024
+| Host         : GDESK-49 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fish_proj_top_control_sets_placed.rpt
+| Design       : fish_proj_top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    62 |
+|    Minimum number of control sets                        |    62 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   359 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    62 |
+| >= 0 to < 4        |    37 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |    11 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             271 |          143 |
+| No           | No                    | Yes                    |              44 |           15 |
+| No           | Yes                   | No                     |             150 |           77 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             110 |           65 |
+| Yes          | Yes                   | No                     |              10 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------+---------------------------+--------------------------------------------+------------------+----------------+--------------+
+|                 Clock Signal                |       Enable Signal       |              Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------+---------------------------+--------------------------------------------+------------------+----------------+--------------+
+|  fc/splash_/color_data_reg[8]_i_2__1_n_0    |                           | fc/splash_/color_data_reg[7]_i_2_n_0       |                1 |              1 |         1.00 |
+|  fc/fastfish1_/color_data_reg[9]_i_2__2_n_0 |                           | fc/fastfish1_/color_data_reg[9]_i_3__2_n_0 |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[6]_i_2__7_n_0    |                           | fc/splash_/color_data_reg[7]_i_2_n_0       |                1 |              1 |         1.00 |
+|  fc/fastfish2_/color_data_reg[0]_i_2__5_n_0 |                           | fc/fastfish2_/color_data_reg[0]_i_3__6_n_0 |                1 |              1 |         1.00 |
+|  dc/pulse                                   |                           |                                            |                1 |              1 |         1.00 |
+|  fc/rod_/color_data_reg[0]_i_2_n_0          |                           | fc/rod_/color_data_reg[0]_i_3__0_n_0       |                1 |              1 |         1.00 |
+|  fc/rod_/color_data_reg[10]_i_2_n_0         |                           | fc/rod_/color_data_reg[10]_i_3__0_n_0      |                1 |              1 |         1.00 |
+|  fc/start_/color_data_reg[0]_i_2__1_n_0     |                           | fc/start_/color_data_reg[0]_i_3__2_n_0     |                1 |              1 |         1.00 |
+|  fc/rod_/color_data_reg[3]_i_2__0_n_0       |                           | fc/rod_/color_data_reg[3]_i_3__0_n_0       |                1 |              1 |         1.00 |
+|  fc/rod_/color_data_reg[2]_i_2_n_0          |                           | fc/rod_/color_data_reg[2]_i_3__0_n_0       |                1 |              1 |         1.00 |
+|  fc/rod_/color_data_reg[8]_i_2_n_0          |                           | fc/rod_/color_data_reg[8]_i_3__0_n_0       |                1 |              1 |         1.00 |
+|  fc/rod_/color_data_reg[9]_i_2__0_n_0       |                           | fc/rod_/color_data_reg[9]_i_3__0_n_0       |                1 |              1 |         1.00 |
+|  fc/slowfish2_/color_data_reg[0]_i_2__3_n_0 |                           | fc/slowfish2_/color_data_reg[0]_i_3__4_n_0 |                1 |              1 |         1.00 |
+|  fc/slowfish2_/color_data_reg[2]_i_2__2_n_0 |                           | fc/slowfish2_/color_data_reg[2]_i_3__3_n_0 |                1 |              1 |         1.00 |
+|  fc/gameover_/color_data_reg[6]_i_2__1_n_0  |                           | fc/gameover_/color_data_reg[6]_i_3__2_n_0  |                1 |              1 |         1.00 |
+|  fc/slowfish1_/color_data_reg[2]_i_2__1_n_0 |                           | fc/slowfish1_/color_data_reg[2]_i_3__2_n_0 |                1 |              1 |         1.00 |
+|  fc/slowfish1_/color_data_reg[0]_i_2__2_n_0 |                           | fc/slowfish1_/color_data_reg[0]_i_3__3_n_0 |                1 |              1 |         1.00 |
+|  fc/dock_/color_data_reg[2]_i_2__0_n_0      |                           | fc/dock_/color_data_reg[2]_i_3__1_n_0      |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[5]_i_2__2_n_0    |                           | fc/splash_/color_data110299_out            |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[4]_i_2__2_n_0    |                           | fc/splash_/color_data110299_out            |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[3]_i_2_n_0       |                           | fc/splash_/color_data_reg[3]_i_3_n_0       |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[11]_i_2_n_0      |                           | fc/splash_/color_data_reg[11]_i_3_n_0      |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[1]_i_2__2_n_0    |                           | fc/splash_/color_data_reg[2]_i_3_n_0       |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[2]_i_2__4_n_0    |                           | fc/splash_/color_data_reg[2]_i_3_n_0       |                1 |              1 |         1.00 |
+|  fc/fastfish2_/color_data_reg[9]_i_2__3_n_0 |                           | fc/fastfish2_/color_data_reg[9]_i_3__3_n_0 |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[0]_i_2__7_n_0    |                           | fc/splash_/color_data110299_out            |                1 |              1 |         1.00 |
+|  fc/dock_/color_data_reg[10]_i_2__1_n_0     |                           | fc/dock_/color_data_reg[10]_i_3__1_n_0     |                1 |              1 |         1.00 |
+|  fc/splash_/color_data_reg[8]_i_2__1_n_0    |                           | fc/splash_/color_data_reg[8]_i_3_n_0       |                1 |              1 |         1.00 |
+|  fc/fastfish1_/color_data_reg[0]_i_2__4_n_0 |                           | fc/fastfish1_/color_data_reg[0]_i_3__5_n_0 |                1 |              1 |         1.00 |
+|  fc/slowfish1_/color_data_reg[7]_i_2__2_n_0 |                           | fc/slowfish1_/color_data1__0               |                2 |              2 |         1.00 |
+|  fc/fastfish1_/color_data_reg[7]_i_2__4_n_0 |                           | fc/fastfish1_/p_0_in__0                    |                2 |              2 |         1.00 |
+|  dc/clk                                     |                           |                                            |                2 |              2 |         1.00 |
+|  fc/splash_/color_data_reg[10]_i_2__0_n_0   |                           | fc/splash_/color_data110299_out            |                1 |              2 |         2.00 |
+|  fc/fastfish2_/color_data_reg[7]_i_2__5_n_0 |                           | fc/fastfish2_/p_0_in__0                    |                2 |              2 |         1.00 |
+|  fc/hook_/color_data_reg[11]_i_2__2_n_0     |                           | fc/hook_/color_data_reg[11]_i_3__2_n_0     |                1 |              2 |         2.00 |
+|  fc/slowfish2_/color_data_reg[7]_i_2__3_n_0 |                           | fc/slowfish2_/color_data1__0               |                2 |              2 |         1.00 |
+|  fc/rod_/color_data_reg[11]_i_2__0_n_0      |                           | fc/rod_/color_data_reg[11]_i_3__0_n_0      |                1 |              2 |         2.00 |
+|  fc/rod_/color_data_reg[7]_i_2__0_n_0       |                           | fc/rod_/color_data11485_out                |                2 |              4 |         2.00 |
+|  fc/dock_/color_data_reg[11]_i_2__1_n_0     |                           | fc/dock_/color_data_reg[11]_i_3__1_n_0     |                1 |              4 |         4.00 |
+|  sm/state_reg[3]_0                          |                           |                                            |                1 |              4 |         4.00 |
+|  fc/dock_/color_data_reg[7]_i_2__1_n_0      |                           | fc/dock_/color_data11764_out               |                2 |              4 |         2.00 |
+|  fc/hook_/color_data_reg[7]_i_2__6_n_0      |                           | fc/hook_/color_data145_out                 |                4 |              4 |         1.00 |
+|  ClkPort_IBUF_BUFG                          | sm/state[3]_i_1_n_0       | BtnC_IBUF                                  |                2 |              4 |         2.00 |
+|  fc/hook_/color_data_reg[9]_i_2__4_n_0      |                           | fc/hook_/color_data_reg[9]_i_3__4_n_0      |                2 |              5 |         2.50 |
+|  move_clk_BUFG                              |                           | BtnC_IBUF                                  |                6 |              8 |         1.33 |
+|  move_clk_BUFG                              | sm/state_reg[2]_1[0]      | BtnC_IBUF                                  |                7 |             10 |         1.43 |
+|  move_clk_BUFG                              | sm/state_reg[1]_0[0]      | BtnC_IBUF                                  |                5 |             10 |         2.00 |
+|  move_clk_BUFG                              | fc/fish_3_ypos[9]_i_1_n_0 | BtnC_IBUF                                  |                8 |             10 |         1.25 |
+|  move_clk_BUFG                              | fc/fish_4_xpos[9]_i_1_n_0 | BtnC_IBUF                                  |                5 |             10 |         2.00 |
+|  move_clk_BUFG                              | fc/fish_3_xpos[9]_i_1_n_0 | BtnC_IBUF                                  |                5 |             10 |         2.00 |
+|  move_clk_BUFG                              | fc/fish_2_ypos[9]_i_1_n_0 | BtnC_IBUF                                  |                6 |             10 |         1.67 |
+|  move_clk_BUFG                              | fc/fish_4_ypos[9]_i_1_n_0 | BtnC_IBUF                                  |                7 |             10 |         1.43 |
+|  dc/clk                                     | dc/hCount[9]_i_1_n_0      | dc/vCount[9]_i_1_n_0                       |                5 |             10 |         2.00 |
+|  move_clk_BUFG                              | fc/fish_2_xpos[9]_i_1_n_0 | BtnC_IBUF                                  |                5 |             10 |         2.00 |
+|  move_clk_BUFG                              | fc/fish_1_ypos[9]_i_1_n_0 | BtnC_IBUF                                  |                4 |             10 |         2.50 |
+|  dc/clk                                     |                           | dc/hCount[9]_i_1_n_0                       |                5 |             10 |         2.00 |
+|  sm/E[0]                                    |                           | dc/AR[0]                                   |                5 |             12 |         2.40 |
+|  ft/clk_sec_reg_n_0                         |                           | BtnC_IBUF                                  |                4 |             16 |         4.00 |
+|  move_clk_BUFG                              | fc/score[15]_i_1_n_0      | BtnC_IBUF                                  |               11 |             16 |         1.45 |
+|  ClkPort_IBUF_BUFG                          |                           | BtnC_IBUF                                  |                5 |             20 |         4.00 |
+|  ClkPort_IBUF_BUFG                          |                           | ft/clear                                   |               17 |             65 |         3.82 |
+|  ClkPort_IBUF_BUFG                          |                           |                                            |              139 |            264 |         1.90 |
++---------------------------------------------+---------------------------+--------------------------------------------+------------------+----------------+--------------+
+
+

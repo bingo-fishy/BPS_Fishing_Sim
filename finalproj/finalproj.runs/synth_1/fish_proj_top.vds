@@ -1,0 +1,650 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 23 01:30:32 2024
+# Process ID: 11628
+# Current directory: C:/Users/linichol/finalproj/finalproj.runs/synth_1
+# Command line: vivado.exe -log fish_proj_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fish_proj_top.tcl
+# Log file: C:/Users/linichol/finalproj/finalproj.runs/synth_1/fish_proj_top.vds
+# Journal file: C:/Users/linichol/finalproj/finalproj.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fish_proj_top.tcl -notrace
+Command: synth_design -top fish_proj_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 664
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1117.629 ; gain = 28.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fish_proj_top' [C:/354_Final_Project/fish_proj_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'display_controller' [C:/354_Final_Project/display_controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_controller' (1#1) [C:/354_Final_Project/display_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fish_controller' [C:/354_Final_Project/fish_controller.v:3]
+	Parameter FISH_ORANGE bound to: 12'b111001110100 
+	Parameter FISH_BLUE bound to: 12'b001000100100 
+	Parameter SKY_BLUE bound to: 12'b101111011101 
+	Parameter WATER_BLUE bound to: 12'b100011001100 
+	Parameter BROWN bound to: 12'b101001100110 
+	Parameter HOOK_GRAY bound to: 12'b011101110111 
+	Parameter WHITE bound to: 12'b111111111111 
+	Parameter BLACK bound to: 12'b000000000000 
+	Parameter LIGHT_BLUE bound to: 12'b110011101110 
+	Parameter GREEN_BG bound to: 12'b000011110000 
+INFO: [Synth 8-6157] synthesizing module 'start_comic_sans_rom' [C:/354_Final_Project/start_comic_sans_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'start_comic_sans_rom' (2#1) [C:/354_Final_Project/start_comic_sans_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (10) of module 'start_comic_sans_rom' [C:/354_Final_Project/fish_controller.v:58]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (10) of module 'start_comic_sans_rom' [C:/354_Final_Project/fish_controller.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gameover_rom' [C:/354_Final_Project/gameover_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'gameover_rom' (3#1) [C:/354_Final_Project/gameover_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (4) of module 'gameover_rom' [C:/354_Final_Project/fish_controller.v:59]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (5) of module 'gameover_rom' [C:/354_Final_Project/fish_controller.v:59]
+INFO: [Synth 8-6157] synthesizing module 'splash_rom' [C:/354_Final_Project/splash_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'splash_rom' (4#1) [C:/354_Final_Project/splash_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (7) of module 'splash_rom' [C:/354_Final_Project/fish_controller.v:60]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (8) of module 'splash_rom' [C:/354_Final_Project/fish_controller.v:60]
+INFO: [Synth 8-6157] synthesizing module 'slowfish1_rom' [C:/354_Final_Project/slowfish1_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'slowfish1_rom' (5#1) [C:/354_Final_Project/slowfish1_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (4) of module 'slowfish1_rom' [C:/354_Final_Project/fish_controller.v:61]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (5) of module 'slowfish1_rom' [C:/354_Final_Project/fish_controller.v:61]
+INFO: [Synth 8-6157] synthesizing module 'slowfish2_rom' [C:/354_Final_Project/slowfish2_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'slowfish2_rom' (6#1) [C:/354_Final_Project/slowfish2_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (4) of module 'slowfish2_rom' [C:/354_Final_Project/fish_controller.v:62]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (5) of module 'slowfish2_rom' [C:/354_Final_Project/fish_controller.v:62]
+INFO: [Synth 8-6157] synthesizing module 'fastfish1_rom' [C:/354_Final_Project/fastfish1_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fastfish1_rom' (7#1) [C:/354_Final_Project/fastfish1_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (4) of module 'fastfish1_rom' [C:/354_Final_Project/fish_controller.v:63]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (5) of module 'fastfish1_rom' [C:/354_Final_Project/fish_controller.v:63]
+INFO: [Synth 8-6157] synthesizing module 'fastfish2_rom' [C:/354_Final_Project/fastfish2_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fastfish2_rom' (8#1) [C:/354_Final_Project/fastfish2_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (4) of module 'fastfish2_rom' [C:/354_Final_Project/fish_controller.v:64]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (5) of module 'fastfish2_rom' [C:/354_Final_Project/fish_controller.v:64]
+INFO: [Synth 8-6157] synthesizing module 'hook_rom' [C:/354_Final_Project/hook_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hook_rom' (9#1) [C:/354_Final_Project/hook_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (4) of module 'hook_rom' [C:/354_Final_Project/fish_controller.v:65]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (4) of module 'hook_rom' [C:/354_Final_Project/fish_controller.v:65]
+INFO: [Synth 8-6157] synthesizing module 'fishingrod_rom' [C:/354_Final_Project/fishingrod_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fishingrod_rom' (10#1) [C:/354_Final_Project/fishingrod_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (7) of module 'fishingrod_rom' [C:/354_Final_Project/fish_controller.v:66]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (7) of module 'fishingrod_rom' [C:/354_Final_Project/fish_controller.v:66]
+INFO: [Synth 8-6157] synthesizing module 'dock_rom' [C:/354_Final_Project/dock_12_bit_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dock_rom' (11#1) [C:/354_Final_Project/dock_12_bit_rom.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (6) of module 'dock_rom' [C:/354_Final_Project/fish_controller.v:67]
+WARNING: [Synth 8-689] width (32) of port connection 'col' does not match port width (10) of module 'dock_rom' [C:/354_Final_Project/fish_controller.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'fish_controller' (12#1) [C:/354_Final_Project/fish_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fish_gameflow_sm' [C:/354_Final_Project/fish_gameflow_sm.v:3]
+	Parameter START_MENU bound to: 4'b0001 
+	Parameter BASE_PLAY bound to: 4'b0010 
+	Parameter LINE_REEL bound to: 4'b0100 
+	Parameter GAME_FINISH bound to: 4'b1000 
+	Parameter UNK bound to: 4'bxxxx 
+INFO: [Synth 8-6155] done synthesizing module 'fish_gameflow_sm' (13#1) [C:/354_Final_Project/fish_gameflow_sm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fish_timer' [C:/354_Final_Project/fish_timer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fish_timer' (14#1) [C:/354_Final_Project/fish_timer.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/354_Final_Project/fish_proj_top.v:144]
+INFO: [Synth 8-226] default block is never used [C:/354_Final_Project/fish_proj_top.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'fish_proj_top' (15#1) [C:/354_Final_Project/fish_proj_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:09:49 ; elapsed = 00:09:54 . Memory (MB): peak = 3097.527 ; gain = 2008.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:10:08 ; elapsed = 00:10:15 . Memory (MB): peak = 3112.133 ; gain = 2023.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:10:08 ; elapsed = 00:10:15 . Memory (MB): peak = 3112.133 ; gain = 2023.414
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 3112.133 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/354_Final_Project/A7_nexys7.xdc]
+WARNING: [Vivado 12-584] No ports matched 'RamCS'. [C:/354_Final_Project/A7_nexys7.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/354_Final_Project/A7_nexys7.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RamCS'. [C:/354_Final_Project/A7_nexys7.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/354_Final_Project/A7_nexys7.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MemOE'. [C:/354_Final_Project/A7_nexys7.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/354_Final_Project/A7_nexys7.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MemOE'. [C:/354_Final_Project/A7_nexys7.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/354_Final_Project/A7_nexys7.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MemWR'. [C:/354_Final_Project/A7_nexys7.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/354_Final_Project/A7_nexys7.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MemWR'. [C:/354_Final_Project/A7_nexys7.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/354_Final_Project/A7_nexys7.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/354_Final_Project/A7_nexys7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/354_Final_Project/A7_nexys7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fish_proj_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fish_proj_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.062 . Memory (MB): peak = 3326.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.681 . Memory (MB): peak = 3326.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:11:43 ; elapsed = 00:11:45 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:11:43 ; elapsed = 00:11:45 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:11:43 ; elapsed = 00:11:45 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/start_comic_sans_12_bit_rom.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/gameover_12_bit_rom.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/splash_12_bit_rom.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/slowfish1_12_bit_rom.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/slowfish2_12_bit_rom.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/fastfish1_12_bit_rom.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/fastfish2_12_bit_rom.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/hook_12_bit_rom.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/fishingrod_12_bit_rom.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'color_data_reg' [C:/354_Final_Project/dock_12_bit_rom.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_reg' [C:/354_Final_Project/fish_controller.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'Ld0_reg' [C:/354_Final_Project/fish_proj_top.v:146]
+WARNING: [Synth 8-327] inferring latch for variable 'Ld1_reg' [C:/354_Final_Project/fish_proj_top.v:146]
+WARNING: [Synth 8-327] inferring latch for variable 'Ld2_reg' [C:/354_Final_Project/fish_proj_top.v:146]
+WARNING: [Synth 8-327] inferring latch for variable 'Ld3_reg' [C:/354_Final_Project/fish_proj_top.v:146]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:54:30 ; elapsed = 00:54:57 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 23    
+	   3 Input   32 Bit       Adders := 15    
+	   2 Input   16 Bit       Adders := 4     
+	   3 Input   12 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 20    
+	   2 Input   10 Bit       Adders := 22    
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 23    
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 8     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 6     
+	  19 Input   12 Bit        Muxes := 46    
+	   2 Input   12 Bit        Muxes := 17730 
+	   4 Input   12 Bit        Muxes := 783   
+	  30 Input   12 Bit        Muxes := 11    
+	   7 Input   12 Bit        Muxes := 253   
+	   8 Input   12 Bit        Muxes := 289   
+	  11 Input   12 Bit        Muxes := 99    
+	   6 Input   12 Bit        Muxes := 402   
+	  12 Input   12 Bit        Muxes := 87    
+	  10 Input   12 Bit        Muxes := 133   
+	   3 Input   12 Bit        Muxes := 575   
+	   9 Input   12 Bit        Muxes := 166   
+	   5 Input   12 Bit        Muxes := 375   
+	  20 Input   12 Bit        Muxes := 33    
+	  17 Input   12 Bit        Muxes := 48    
+	  29 Input   12 Bit        Muxes := 21    
+	  22 Input   12 Bit        Muxes := 31    
+	  15 Input   12 Bit        Muxes := 78    
+	  16 Input   12 Bit        Muxes := 76    
+	  37 Input   12 Bit        Muxes := 11    
+	  25 Input   12 Bit        Muxes := 24    
+	  14 Input   12 Bit        Muxes := 65    
+	  13 Input   12 Bit        Muxes := 97    
+	  21 Input   12 Bit        Muxes := 42    
+	  26 Input   12 Bit        Muxes := 16    
+	  24 Input   12 Bit        Muxes := 14    
+	  18 Input   12 Bit        Muxes := 33    
+	  23 Input   12 Bit        Muxes := 22    
+	  33 Input   12 Bit        Muxes := 4     
+	  36 Input   12 Bit        Muxes := 7     
+	  34 Input   12 Bit        Muxes := 8     
+	  28 Input   12 Bit        Muxes := 6     
+	  31 Input   12 Bit        Muxes := 10    
+	  41 Input   12 Bit        Muxes := 6     
+	  46 Input   12 Bit        Muxes := 2     
+	  38 Input   12 Bit        Muxes := 6     
+	  32 Input   12 Bit        Muxes := 6     
+	  39 Input   12 Bit        Muxes := 5     
+	  59 Input   12 Bit        Muxes := 3     
+	  44 Input   12 Bit        Muxes := 2     
+	  40 Input   12 Bit        Muxes := 2     
+	  54 Input   12 Bit        Muxes := 1     
+	  43 Input   12 Bit        Muxes := 3     
+	  45 Input   12 Bit        Muxes := 2     
+	  27 Input   12 Bit        Muxes := 8     
+	  49 Input   12 Bit        Muxes := 1     
+	  57 Input   12 Bit        Muxes := 2     
+	  35 Input   12 Bit        Muxes := 3     
+	  47 Input   12 Bit        Muxes := 1     
+	  65 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 1328  
+	   3 Input   11 Bit        Muxes := 69    
+	   4 Input   11 Bit        Muxes := 2     
+	   4 Input   10 Bit        Muxes := 5     
+	   2 Input   10 Bit        Muxes := 136   
+	   3 Input   10 Bit        Muxes := 2     
+	   5 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 1     
+	   5 Input    9 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 5     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	  19 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	  16 Input    4 Bit        Muxes := 3     
+	   9 Input    4 Bit        Muxes := 5     
+	  13 Input    4 Bit        Muxes := 5     
+	  11 Input    4 Bit        Muxes := 6     
+	  19 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 4     
+	  25 Input    4 Bit        Muxes := 3     
+	  18 Input    4 Bit        Muxes := 1     
+	  32 Input    4 Bit        Muxes := 2     
+	  54 Input    4 Bit        Muxes := 1     
+	  38 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 5     
+	  23 Input    4 Bit        Muxes := 1     
+	  17 Input    4 Bit        Muxes := 2     
+	  37 Input    4 Bit        Muxes := 1     
+	  15 Input    4 Bit        Muxes := 2     
+	  22 Input    4 Bit        Muxes := 1     
+	  14 Input    4 Bit        Muxes := 2     
+	  47 Input    4 Bit        Muxes := 1     
+	  26 Input    4 Bit        Muxes := 1     
+	  20 Input    4 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 101   
+	   5 Input    4 Bit        Muxes := 3     
+	  21 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	  23 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 13    
+	  10 Input    3 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 12    
+	  16 Input    3 Bit        Muxes := 5     
+	   9 Input    3 Bit        Muxes := 9     
+	   5 Input    3 Bit        Muxes := 21    
+	  15 Input    3 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 22    
+	  13 Input    3 Bit        Muxes := 2     
+	  17 Input    3 Bit        Muxes := 1     
+	  34 Input    3 Bit        Muxes := 1     
+	  40 Input    3 Bit        Muxes := 1     
+	  19 Input    3 Bit        Muxes := 1     
+	  49 Input    3 Bit        Muxes := 1     
+	  43 Input    3 Bit        Muxes := 1     
+	  12 Input    3 Bit        Muxes := 7     
+	  28 Input    3 Bit        Muxes := 1     
+	  29 Input    3 Bit        Muxes := 1     
+	  14 Input    3 Bit        Muxes := 2     
+	  11 Input    3 Bit        Muxes := 4     
+	  25 Input    3 Bit        Muxes := 1     
+	  35 Input    3 Bit        Muxes := 1     
+	  20 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 82    
+	   3 Input    3 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 8     
+	   3 Input    2 Bit        Muxes := 20    
+	  12 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 25    
+	  11 Input    2 Bit        Muxes := 2     
+	   8 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 3     
+	  15 Input    2 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 8     
+	  13 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 133   
+	   5 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out0[0] with 1st driver pin 'i_0/SSD_CATHODES_inferred/out0[0]' [C:/354_Final_Project/fish_proj_top.v:211]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out0[0] with 2nd driver pin 'VCC' [C:/354_Final_Project/fish_proj_top.v:211]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net out0[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/354_Final_Project/fish_proj_top.v:211]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\color_data_reg[3] )
+WARNING: [Synth 8-7129] Port row[9] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[8] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[7] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[6] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[5] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[4] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[9] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[8] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[7] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[6] in module start_comic_sans_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[5] in module start_comic_sans_rom is either unconnected or has no load
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_xpos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_xpos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rod_xpos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_ypos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rod_ypos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rod_ypos_reg[9] )
+INFO: [Synth 8-3886] merging instance 'hook_xpos_reg[9]' (FDCE) to 'hook_xpos_reg[1]'
+INFO: [Synth 8-3886] merging instance 'hook_xpos_reg[8]' (FDPE) to 'hook_xpos_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hook_xpos_reg[7]' (FDPE) to 'hook_xpos_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hook_xpos_reg[6]' (FDPE) to 'hook_xpos_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hook_xpos_reg[5]' (FDCE) to 'hook_xpos_reg[1]'
+INFO: [Synth 8-3886] merging instance 'hook_xpos_reg[4]' (FDPE) to 'hook_xpos_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hook_xpos_reg[3]' (FDCE) to 'hook_xpos_reg[1]'
+INFO: [Synth 8-3886] merging instance 'hook_xpos_reg[1]' (FDCE) to 'hook_xpos_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\hook_xpos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hook_xpos_reg[2] )
+INFO: [Synth 8-3886] merging instance 'hook_/color_data_reg[10]' (LDC) to 'hook_/color_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fastfish2_/color_data_reg[4]' (LDP) to 'fastfish2_/color_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fastfish2_/color_data_reg[5]' (LDP) to 'fastfish2_/color_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fastfish2_/color_data_reg[10]' (LDC) to 'fastfish2_/color_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fastfish2_/color_data_reg[8]' (LDC) to 'fastfish2_/color_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fastfish2_/color_data_reg[11]' (LDC) to 'fastfish2_/color_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fastfish2_/color_data_reg[3]' (LDC) to 'fastfish2_/color_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fastfish2_/color_data_reg[2]' (LDC) to 'fastfish2_/color_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fastfish2_/color_data_reg[1]' (LDC) to 'fastfish2_/color_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'fastfish1_/color_data_reg[4]' (LDP) to 'fastfish1_/color_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fastfish1_/color_data_reg[5]' (LDP) to 'fastfish1_/color_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fastfish1_/color_data_reg[10]' (LDC) to 'fastfish1_/color_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fastfish1_/color_data_reg[8]' (LDC) to 'fastfish1_/color_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fastfish1_/color_data_reg[11]' (LDC) to 'fastfish1_/color_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fastfish1_/color_data_reg[3]' (LDC) to 'fastfish1_/color_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fastfish1_/color_data_reg[2]' (LDC) to 'fastfish1_/color_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fastfish1_/color_data_reg[1]' (LDC) to 'fastfish1_/color_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'slowfish2_/color_data_reg[4]' (LDP) to 'slowfish2_/color_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'slowfish2_/color_data_reg[5]' (LDP) to 'slowfish2_/color_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'slowfish2_/color_data_reg[10]' (LDC) to 'slowfish2_/color_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'slowfish2_/color_data_reg[8]' (LDC) to 'slowfish2_/color_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'slowfish2_/color_data_reg[9]' (LDC) to 'slowfish2_/color_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'slowfish2_/color_data_reg[11]' (LDC) to 'slowfish2_/color_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'slowfish2_/color_data_reg[3]' (LDC) to 'slowfish2_/color_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'slowfish2_/color_data_reg[1]' (LDC) to 'slowfish2_/color_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'slowfish1_/color_data_reg[4]' (LDP) to 'slowfish1_/color_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'slowfish1_/color_data_reg[5]' (LDP) to 'slowfish1_/color_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'slowfish1_/color_data_reg[10]' (LDC) to 'slowfish1_/color_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'slowfish1_/color_data_reg[8]' (LDC) to 'slowfish1_/color_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'slowfish1_/color_data_reg[9]' (LDC) to 'slowfish1_/color_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'slowfish1_/color_data_reg[11]' (LDC) to 'slowfish1_/color_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'slowfish1_/color_data_reg[3]' (LDC) to 'slowfish1_/color_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'slowfish1_/color_data_reg[1]' (LDC) to 'slowfish1_/color_data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_ypos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_ypos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_ypos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_ypos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_xpos_reg[0] )
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[7]' (LDP) to 'gameover_/color_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[4]' (LDP) to 'gameover_/color_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[5]' (LDP) to 'gameover_/color_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[10]' (LDC) to 'gameover_/color_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[8]' (LDC) to 'gameover_/color_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[9]' (LDC) to 'gameover_/color_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[11]' (LDC) to 'gameover_/color_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[3]' (LDC) to 'gameover_/color_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[2]' (LDC) to 'gameover_/color_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gameover_/color_data_reg[1]' (LDC) to 'gameover_/color_data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gameover_/\color_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_xpos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_xpos_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_xpos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_xpos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameover_xpos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_xpos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameover_xpos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameover_xpos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameover_xpos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_xpos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_ypos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameover_ypos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameover_ypos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_ypos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_ypos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameover_ypos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_ypos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_ypos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_ypos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameover_ypos_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_xpos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_xpos_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_xpos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_xpos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\start_xpos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_xpos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\start_xpos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\start_xpos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\start_xpos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_xpos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_ypos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\start_ypos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\start_ypos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_ypos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_ypos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\start_ypos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_ypos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_ypos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_ypos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\start_ypos_reg[2] )
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[10]' (LDP) to 'start_/color_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[11]' (LDP) to 'start_/color_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[9]' (LDP) to 'start_/color_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[8]' (LDP) to 'start_/color_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[7]' (LDP) to 'start_/color_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[6]' (LDP) to 'start_/color_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[5]' (LDP) to 'start_/color_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[4]' (LDP) to 'start_/color_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[3]' (LDP) to 'start_/color_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[2]' (LDP) to 'start_/color_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'start_/color_data_reg[1]' (LDP) to 'start_/color_data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\splash_ypos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_ypos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_ypos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\splash_xpos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_xpos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_xpos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rod_xpos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rod_xpos_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_xpos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_xpos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_xpos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_xpos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_ypos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rod_ypos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_ypos_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rod_ypos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_ypos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rod_ypos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rod_ypos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_xpos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_xpos_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_xpos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_xpos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_xpos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_xpos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_xpos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_xpos_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_xpos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_ypos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_ypos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_ypos_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_ypos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dock_ypos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dock_ypos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_xpos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_xpos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_xpos_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_xpos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\splash_xpos_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_xpos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\splash_xpos_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\splash_xpos_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_ypos_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_ypos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\splash_ypos_reg[2] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (color_data_reg[0]) is unused and will be removed from module gameover_rom.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 01:06:54 ; elapsed = 01:07:30 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 01:07:01 ; elapsed = 01:07:37 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 01:07:08 ; elapsed = 01:07:44 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 01:07:18 ; elapsed = 01:07:55 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 01:07:23 ; elapsed = 01:08:00 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 01:07:23 ; elapsed = 01:08:00 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 01:07:26 ; elapsed = 01:08:02 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 01:07:26 ; elapsed = 01:08:02 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 01:07:27 ; elapsed = 01:08:04 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 01:07:27 ; elapsed = 01:08:04 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   166|
+|3     |LUT1   |    63|
+|4     |LUT2   |   766|
+|5     |LUT3   |   816|
+|6     |LUT4   |  1127|
+|7     |LUT5   |  3431|
+|8     |LUT6   | 12938|
+|9     |MUXF7  |  2340|
+|10    |MUXF8  |   579|
+|11    |FDCE   |   105|
+|12    |FDPE   |    49|
+|13    |FDRE   |   352|
+|14    |LD     |     4|
+|15    |LDC    |    44|
+|16    |LDP    |    31|
+|17    |IBUF   |     6|
+|18    |OBUF   |    35|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 01:07:27 ; elapsed = 01:08:04 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:56:02 ; elapsed = 01:06:54 . Memory (MB): peak = 3327.895 ; gain = 2023.414
+Synthesis Optimization Complete : Time (s): cpu = 01:07:27 ; elapsed = 01:08:05 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.317 . Memory (MB): peak = 3327.895 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3164 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3327.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 79 instances were transformed.
+  LD => LDCE: 4 instances
+  LDC => LDCE: 44 instances
+  LDP => LDPE: 31 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+211 Infos, 53 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 01:07:38 ; elapsed = 01:08:17 . Memory (MB): peak = 3327.895 ; gain = 2239.176
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/linichol/finalproj/finalproj.runs/synth_1/fish_proj_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fish_proj_top_utilization_synth.rpt -pb fish_proj_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 02:38:57 2024...

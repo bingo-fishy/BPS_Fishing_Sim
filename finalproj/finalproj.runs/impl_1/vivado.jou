@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 23 02:39:05 2024
+# Process ID: 6368
+# Current directory: C:/Users/linichol/finalproj/finalproj.runs/impl_1
+# Command line: vivado.exe -log fish_proj_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fish_proj_top.tcl -notrace
+# Log file: C:/Users/linichol/finalproj/finalproj.runs/impl_1/fish_proj_top.vdi
+# Journal file: C:/Users/linichol/finalproj/finalproj.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source fish_proj_top.tcl -notrace
